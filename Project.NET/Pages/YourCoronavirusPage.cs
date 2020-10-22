@@ -10,7 +10,7 @@ namespace Project.NET.Pages
 {
     public class YourCoronavirusPage : BasePage
     {
-        [FindsBy(How = How.XPath, Using = "//h3[contains(text(),'share')]")]
+        [FindsBy(How = How.XPath, Using = "//h3[contains(text(),'share')]/..")]
         IWebElement howToShareButton { get; set; }
            
         public YourCoronavirusPage(IWebDriver driver) : base(driver)
